@@ -14,7 +14,7 @@ Everything else is exactly as in `create-react app`.
 
 Simply call `create-react-app` with the `--scripts-version` parameter like so:
 
-    create-react-app app --scripts-version LukasBombach/react-scripts-electron-new
+    create-react-app app --scripts-version react-scripts-electron-new
 
 ## Todo
 
