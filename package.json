@@ -1,14 +1,14 @@
 {
-  "name": "react-scripts",
+  "name": "react-scripts-electron-new",
   "version": "1.0.2",
   "description": "Configuration and scripts for Create React App.",
-  "repository": "facebookincubator/create-react-app",
+  "repository": "LukasBombach/react-scripts-electron",
   "license": "MIT",
   "engines": {
     "node": ">=6"
   },
   "bugs": {
-    "url": "https://github.com/facebookincubator/create-react-app/issues"
+    "url": "https://github.com/LukasBombach/react-scripts-electron/issues"
   },
   "files": [
     "bin",
