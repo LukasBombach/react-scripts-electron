@@ -18,7 +18,7 @@ Simply call `create-react-app` with the `--scripts-version` parameter like so:
 
 ## This is what you'll get
 
-![Screenshot](https://github.com/LukasBombach/react-scripts-electron/blob/electron/documentation/screenshot.png)
+![Screenshot](https://raw.githubusercontent.com/LukasBombach/react-scripts-electron/electron/documentation/screenshot.png)
 
 ## Todo
 
