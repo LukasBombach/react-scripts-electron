@@ -28,6 +28,7 @@ const webpack = require('webpack');
 const WebpackDevServer = require('webpack-dev-server');
 const clearConsole = require('react-dev-utils/clearConsole');
 const checkRequiredFiles = require('react-dev-utils/checkRequiredFiles');
+const electron = require('electron');
 const spawn = require("child_process").spawn;
 const {
   choosePort,
@@ -73,7 +74,7 @@ choosePort(HOST, DEFAULT_PORT)
       urls.lanUrlForConfig
     );
     const devServer = new WebpackDevServer(compiler, serverConfig);
-    // Launch WebpackDevServer.
+    // Launch WebpackDevServer and electron.
     devServer.listen(port, HOST, err => {
       if (err) {
         return console.log(err);
@@ -81,9 +82,9 @@ choosePort(HOST, DEFAULT_PORT)
       if (isInteractive) {
         clearConsole();
       }
-      console.log(chalk.cyan('Starting the development server...\n'));
-      const electron = spawn("electron", ["scripts/electron.js"]); // todo pass port
-      electron.on('close', () => {
+      console.log(chalk.cyan('Starting the development server and electron...\n'));
+      const electronProcess = spawn(electron, ["node_modules/react-scripts-electron-new/scripts/electron.js"]); // todo pass port
+      electronProcess.on('close', () => {
         devServer.close();
         process.exit();
       });
