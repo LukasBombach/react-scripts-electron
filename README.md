@@ -16,6 +16,10 @@ Simply call `create-react-app` with the `--scripts-version` parameter like so:
 
     create-react-app app --scripts-version react-scripts-electron-new
 
+## This is what you'll get
+
+
+
 ## Todo
 
 * Find a better name (react-scripts-electron was already used (yet outdated))
